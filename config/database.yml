@@ -5,7 +5,12 @@
 #   gem 'sqlite3'
 #
 default: &default
-  adapter: sqlite3
+  adapter: mysql2
+  encoding: utf8
+  database: app
+  username: root
+  password: root
+  host: mysql.sandboxdemo.runnable.io
   pool: 5
   timeout: 5000
 
