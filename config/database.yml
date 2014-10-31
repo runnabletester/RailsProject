@@ -10,8 +10,7 @@ default: &default
   database: app
   username: root
   password: root
-  host: mysql.sandboxdemo.runnable.io
-  pool: 5
+  host: <%= ENV['DB_HOST'] %>
   timeout: 5000
 
 development:
