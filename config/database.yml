@@ -10,7 +10,7 @@ default: &default
   database: app
   username: root
   password: root
-  host: <%= ENV['DB_HOST'] %>
+  host: <%= ENV['MYSQL_HOST'] %>
   timeout: 5000
 
 development:
